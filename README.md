@@ -1,68 +1,65 @@
-# MERN-BUS-APP
+# 🚌 MERN Bus Ticket Booking App
 
+A full-stack Bus Ticket Booking application built with the **MERN Stack** – MongoDB, Express.js, React.js, and Node.js.
 
-A Bus ticket booking application made using MERN Stack (MongoDB, Express js, React js, Node js)
+---
 
-The Bus ticket application is composed of the following Features:
+## ✨ Features
 
-### Front-End
+### 🔐 Authentication
+- Sign Up / Sign In system
+- Token-based authentication using **Passport.js**
+- Passwords are securely hashed
+- Only logged-in users can access the app
 
-* Sign-In & Sign-Up Pages.
+### 👤 User Dashboard
+- Profile page displaying user info
+- Booking history (optional future feature)
 
-* Uses Token based system, so only registered users can access the website  passport js.
+### 🚏 Bus Search & Booking
+- Select source and destination cities
+- View buses from different companies with details
+- Choose seats with an interactive seat selection page
+- Dynamically generated passenger form
+- Confirmation screen with card input (UI only)
+- Final ticket page shows passenger details and a unique transaction ID
 
-* Password hashing using passport js.
+---
 
-* Has a profile page, which will display all information about the signed in user.
+## 🛠 Backend Overview
+- Built with **Express.js**
+- Uses **MongoDB Atlas** for storing user and booking data
+- **Passport.js** for authentication and password hashing
+- *Note:* Seat data is not dynamically stored in this version
 
-* List of cities for users to choose from (starting city & destination city). 
+---
 
-* Getting list of bus's of different companies with various details.
+## 📁 Project Structure Highlights
+- Modular **React** folder layout
+- Clean backend structure with routes, models, controllers, and config
 
-* Seat selection page has a very user friendly environment, which also generates dynamic forms for storing data's of passengers.
+---
 
-* Has a Confirmation page, which gets a debit card data using react-credit-cards. This version of the application does not include handling the payment process. 
+## 🧰 Tech Stack & Tools
 
-* Final page has a ticket displaying component, it displays all passenger data and also generates a random number as a transaction ID.
+| Tech             | Purpose                                     |
+|------------------|---------------------------------------------|
+| VS Code          | Code Editor                                 |
+| Node.js          | JavaScript runtime                          |
+| React.js         | Frontend framework                          |
+| Express.js       | Backend framework                           |
+| MongoDB Atlas    | Cloud-hosted database                       |
+| Passport.js      | Authentication middleware                   |
+| Axios            | API requests                                |
+| Babel            | JavaScript compiler                         |
+| Webpack          | Module bundler                              |
+| SCSS             | Styling preprocessor                        |
+| Bootstrap 4      | UI styling and responsiveness               |
+| react-credit-cards | Card input component (no real payments)   |
 
-### Back-End
+---
 
-* Uses Express js based application for the backend process.
-
-* Uses MongoDB atlas for storing the collections.
-
-* Uses passport js for authenticating user and token based system.
-
-* Uses passport js for hashing the password before sending the data to the cloud.
-
-* This version does not support dynamic seat data being stored from cloud.
-
-
-This project also demonstrates:
-
-* a typcial React project layout structure
-
-
-
-## Developed With
-
-* [Visual Studio Code](https://code.visualstudio.com/) - A source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring
-* [Node.js](https://nodejs.org/en/) - Javascript runtime
-* [React](https://reactjs.org/) - A javascript library for building user interfaces
-* [Babel](https://babeljs.io/) - A transpiler for javascript
-* [Webpack](https://webpack.js.org/) - A module bundler
-* [SCSS](http://sass-lang.com/) - A css metalanguage
-* [Bootstrap 4](https://getbootstrap.com/) - Bootstrap is an open source toolkit for developing with HTML, CSS, and JS
-* [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
-* [Express js](http://expressjs.com/) - Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-* [MongoDB atlas](https://www.mongodb.com/cloud/atlas) - MongoDB Atlas is the global cloud database service for modern applications.
-* [Passport Js](http://www.passportjs.org/) - Passport is authentication middleware for Node.js. Extremely flexible and modular, Passport can be unobtrusively dropped in to any Express-based web application.
-
-
-
-
-
-
-
-
-
+## 🚧 Limitations / Future Work
+- No real payment processing (UI-only card form)
+- Seat availability not stored dynamically in DB
+- No admin panel or booking history yet
